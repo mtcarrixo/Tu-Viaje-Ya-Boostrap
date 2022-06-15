@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-success navbar-success">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
@@ -27,6 +29,18 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Subpaginas/Vuelos.html">Vuelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Subpaginas/Hoteles.html">Hoteles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Subpaginas/Estadia.html">Estadías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Subpaginas/Iniciasesion.html">Inicia Sesion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./Subpaginas/Sobrenosotros.html">Sobre nosotros</a>
@@ -87,23 +101,47 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+<br>
+            <div class="ofertas text-center">
+                <h3>Ofertas de la semana</h3>
+            </div>
+<br>
+        <div class="content">
+            <article class=" maldivas article"  data-aos="flip-right"  data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="50">
+                <h1>Viaja a Maldivas</h1>
+                <p><b>Maldivas es un país tropical en el océano Índico que abarca 26 atolones con forma de anillos que se componen de más de 1,000 islas de coral.</b></p>
 
-        <p class="bg-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, similique consequatur
-            quaerat odio delectus nemo, earum dolor culpa molestias neque assumenda repellat in praesentium ducimus
-            suscipit! Cum sapiente voluptate aperiam.
-            Corporis accusantium obcaecati quod harum delectus. Quaerat vel error minus eos, velit officia illo nulla
-            dolores magnam atque animi quas consequatur incidunt saepe accusamus. Corrupti voluptas animi tempora
-            consectetur molestiae?
-            Aliquam incidunt, aut qui magni officia eveniet enim debitis molestiae fugiat quasi ipsum similique deleniti
-            reiciendis mollitia? Sequi nostrum atque eaque quaerat facere! Ratione mollitia deleniti sed necessitatibus
-            voluptate. Numquam.
-            Dignissimos illum enim, praesentium fugiat, est, expedita quod vitae quos ea temporibus ab! Libero eum culpa
-            tempore aliquam est quam officiis, qui atque recusandae, voluptatibus asperiores sit officia inventore quo?
-            Magni maxime unde nulla aliquid ratione fugiat. Nobis quis adipisci excepturi, nihil aliquid magni magnam
-            fugiat dolore animi, inventore quisquam voluptatum soluta numquam ab id? Quam optio eveniet quisquam eos.
-        </p>
+                <p><b>Es conocido por las playas, las lagunas azules y los extensos arrecifes.</b></p>
+
+                <p><b>La capital, Malé, tiene un mercado de pescado ajetreado, restaurantes y tiendas en la avenida principal, Majeedhee Magu.</b></p>
+            </article>
+
+            <article class=" corea article" data-aos="flip-right"  data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="50">
+                <h1>Viaja a Corea</h1>
+                <p><b>Es, actualmente, el destino más accesible de la península coreana, y propone al visitante experiencias de lo más variado, paisajes realmente sorprendentes y unos 5.000 años de cultura e historia. </b></p>
+
+                <p><b>Gwangjang es un lugar especial. De ropa y telas de día, por la noche los puestos del meokjagolmok (callejón de la comida) desprenden aromas exóticos y ofrecen exquisiteces gastronómicas</b></p>
+
+                <p><b> Las montañas y playas de Busan, la buena comida callejera y el ambiente cosmopolita la convierten en un buen destino turístico tanto para los propios coreanos como para los viajeros. </b></p>
+            </article>
+
+            <article class=" bariloche article" data-aos="flip-right"  data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="50">
+                <h1>Viaja a Bariloche</h1>
+                <p><b> Carlos de Bariloche (comúnmente llamada Bariloche) es una ciudad en la región de la Patagonia argentina. Limita con Nahuel Huapi, un gran lago glacial rodeado de montañas de los Andes.</b> </p>
+
+                <p><b>Bariloche es conocida por su arquitectura al estilo alpino de Suiza y su chocolate</b></p>
+
+                <p><b>También es una base popular para el excursionismo y el esquí en las montañas cercanas, y para explorar los alrededores del Distrito de los Lagos.</b></p>
+            </article>
+    </div>
     </main>
-
+ <br><br><br>
     <footer>
 
 
@@ -121,6 +159,11 @@
         <div class="sfooter">
             <h4>Tu viaje ya. - Derechos reservados</h4>
         </div>
+
+        <div>
+            <a href="https://web.whatsapp.com"><img class="contactow" src="./assets/WPP.png" alt="Nuestro Whatsapp"></a>
+        </div>
+
     </footer>
 
 
@@ -128,6 +171,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

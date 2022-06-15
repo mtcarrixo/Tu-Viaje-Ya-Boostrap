@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-success navbar-success">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,6 +29,18 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Subpaginas/Vuelos.html">Vuelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Subpaginas/Hoteles.html">Hoteles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Subpaginas/Estadia.html">Estadías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Subpaginas/Iniciasesion.html">Inicia Sesion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Subpaginas/Sobrenosotros.html">Sobre nosotros</a>
@@ -72,7 +86,77 @@
 
     </main>
 
+    <br><br>
+    <hr>
     <footer>
+
+        <div class="form">
+            <form action="" method="get" enctype="text/plain">
+                    
+                        <legend>
+                            Contactanos
+                        </legend>
+                        <br>
+                        <div>
+                            <label for="Nom">Nombre de Usuario</label>
+                            <input type="text" id="Nom" name="Nom">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="userMail">E-Mail</label>
+                            <input type="email" name="userMail" id="userMail">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="telefono">Dejanos tu teléfono y te enviamos un Whatsapp</label>
+                            <input type="number" id="telefono" name="telefono">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Provincia">Dejanos tu Provincia</label>
+                        </div>
+                        <div>
+                            <br>
+                            <select name="Provincia" id="Provincia">
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Ciudad Autonoma De Buenos Aires">Ciudad Autonoma De Buenos Aires</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Entre Rios">Entre Rios</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="La Pampa">La Pampa</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Neuquén">Neuquén</option>
+                                <option value="Río Negro">Río Negro</option>
+                                <option value="Salta">Salta</option>
+                                <option value="San Juan">San Juan</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Santiago Del Estero">Santiago Del Estero</option>
+                                <option value="Tierra Del Fuego">Tierra Del Fuego</option>
+                                <option value="Tucumán">Tucumán</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="texto">Dejanos tu consulta</label>
+                        </div>
+                        <div>
+                            <textarea name="texto" id="texto" cols="30" rows="1"></textarea>
+                        </div>
+                        <br>
+                        <button class="contacto__form" type="submit">Enviar</button>
+                    
+              
+                </form>
+            </div>
+
 
 
         <div class="redes bg-dark text-white text-center pt4">
@@ -89,9 +173,14 @@
         <div class="sfooter">
             <h4>Tu viaje ya. - Derechos reservados</h4>
         </div>
+    
+        <div>
+            <a href="https://web.whatsapp.com"><img class="contactow" src="../assets/WPP.png" alt="Nuestro Whatsapp"></a>
+        </div>
+    
     </footer>
 
-
+    
 
 
 
@@ -101,4 +190,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>

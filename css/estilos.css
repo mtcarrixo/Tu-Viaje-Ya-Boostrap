@@ -5,8 +5,91 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(207, 248, 238);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+    background-color: rgb(28, 167, 209);
+}
 .carousel-inner img {
-    max-height: 600px;
+    max-height: 400px;
+}
+
+
+
+.ofertas{
+    color: brown;
+}
+
+.container > .content{
+    background: rgb(151, 229, 151);
+    padding: 30px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.container > .content{
+    grid-column: span 4;
+    justify-content: center;
+    
+}
+
+.content > .article{
+    background-color: rgb(240, 252, 173);
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.content .article h1,
+.content .article p{
+    padding: 10px ;
+    font-size:20px;
+    color: white;
+    max-width: 900px;
+}
+
+.maldivas{
+    background: url(../assets/Maldivas.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    padding: 10px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+
+.corea{
+    background: url(../assets/Corea.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    padding: 10px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.bariloche{
+    background: url(../assets/Bariloche.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    padding: 10px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
 }
 
 .redes{
@@ -36,6 +119,26 @@
     cursor: pointer;
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    border: 2px brown double;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contacto__form{
+    display: flex;
+
+}
+
+.contactow{
+    width: 3em; 
+    height: 3em;
+    position: fixed;
+    right: 5px;
+    bottom: 7px;
+}
 
 /*Segunda Pagina*/
 
